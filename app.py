@@ -9,7 +9,7 @@ pipe = load(open('model/pipeline.pkl', "rb"))
 
 @app.route('/')
 def index():
-    return 'Hello World!'
+    return 'Previsão na rota "/predict"'
 
 @app.route('/predict', methods=['POST'])
 def post():
